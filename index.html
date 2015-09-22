@@ -1,0 +1,71 @@
+<html>
+<head>
+<title> Lab 5  </title>
+<script src="script/processing.js"></script>
+<script type="text/processing" data-processing-target="mycanvas">
+
+PImage pocariSweat;
+PImage LemonTea;
+PImage arizona;
+
+void setup(){
+
+size( 700,700 );
+background(255,255,255);
+frameRate( 30 );
+
+
+pocariSweat = loadImage("images/pocarisweat.jpg");
+lemonTea = loadImage("images/lemontea.jpg");
+arizona = loadImage("images/arizona.jpg");
+
+}
+
+
+void draw()
+{
+
+stroke(0,0,0);
+fill(201,0,0);
+rect(8,0,370,550);
+
+stroke(0,0,0);
+fill(255,255,255);
+rect(18,60,350,400);
+
+stroke(0,0,0);
+line(18,270,367,270);
+
+fill(0,0,0);
+text("7.00",66,217);
+
+text("7.00",175,217);
+
+text("12.00",280,218);
+
+image(pocariSweat,30,100);
+image(lemonTea,140,100);
+image(arizona,235,80,130,120);
+
+stroke(0,0,0);
+fill(200,0,0);
+rect(55,230,50,17);
+
+stroke(0,0,0);
+fill(200,0,0);
+rect(165,230,50,17);
+
+stroke(0,0,0);
+fill(200,0,0);
+rect(273,230,50,17);
+
+}
+
+</script>
+<canvas id="mycanvas"></canvas>
+</head>
+
+<body>
+
+</body>
+</html>
